@@ -25,3 +25,10 @@ I have a question before staring this project. How human can recognize lane stip
 
 
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/shubham-sri/self-driving-car/tree/main/lane_finding)
+
+<center>
+<video width="320" height="240" controls>
+  <source src="/assets/video/lane_finding.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+</center>
