@@ -1,6 +1,9 @@
-title: Minimal theme
-logo: /assets/img/logo.png
-description: Minimal is a theme for GitHub Pages.
-show_downloads: true
+title: Shubham Srivastava
+logo: /assets/img/profile.jpg
+description: 2+ years experienced enterprising software engineering professional gained hands-on experience in designing, implementing, and installing software solutions and developing high-quality software designs & architecture. Adept at brainstorming & creating various tools and applications by producing eﬃcient code, conducting systems analysis to improve operations, and automating tasks through appropriate tools & scripting. Proﬁcient in interacting with the clients to successfully execute multiple big-ticket projects within the stipulated time while ensuring 100% client satisfaction. 
+show_downloads: flase
 google_analytics:
 theme: jekyll-theme-minimal
+github:
+  is_project_page: false
+  is_user_page: false
