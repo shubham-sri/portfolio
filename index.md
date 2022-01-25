@@ -28,7 +28,7 @@ I have a question before staring this project. How human can recognize lane stip
 
 <center>
 <video width="320" height="240" controls>
-  <source src="/assets/video/lane_finding.mp4" type="video/mp4">
+  <source src="/portfolio/assets/video/lane_finding.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 </center>
