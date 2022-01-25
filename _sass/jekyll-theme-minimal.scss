@@ -141,6 +141,22 @@ header {
 	border: 1px solid #03BFCB;
 	border-radius: 50%;
 	padding: 7px;
+  width: 128px;
+  height: 128px;
+}
+
+.card-container h3 {
+	margin: 10px 0;
+}
+
+.card-container h6 {
+	margin: 5px 0;
+	text-transform: uppercase;
+}
+
+.card-container p {
+	font-size: 14px;
+	line-height: 21px;
 }
 
 button.primary {
