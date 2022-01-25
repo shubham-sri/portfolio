@@ -145,6 +145,20 @@ header {
   height: 128px;
 }
 
+.card-container h3 {
+	margin: 10px 0;
+}
+
+.card-container h6 {
+	margin: 5px 0;
+	text-transform: uppercase;
+}
+
+.card-container p {
+	font-size: 14px;
+	line-height: 21px;
+}
+
 button.primary {
 	background-color: #03BFCB;
 	border: 1px solid #03BFCB;
