@@ -7,7 +7,7 @@
 
 {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-    <script src="https://kit.fontawesome.com/6cba918e04.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
@@ -29,9 +29,16 @@
         {% endif %}
 
         {% if site.github.is_user_page %}
-        <ul class="downloads">
-          <li><a href="{{ site.github.owner_url }}">View On <i class="fab fa-github-alt"></i></a></li>
-        </ul>
+        <div>
+          <div>
+            <p>View On</p>
+          </div>
+          <div>
+            <a href="{{ site.github.owner_url }}">
+              <i class="fa fa-github-alt" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
         {% endif %}
 
         {% if site.show_downloads %}
