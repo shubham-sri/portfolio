@@ -1,123 +1,34 @@
+# Data Science Portfolio
+
 ---
-layout: default
----
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+## Image Processing
 
-[Link to another page](./another-page.html).
+### Finding Lane Lines
 
-There should be whitespace between paragraphs.
+The goal of this first project was to create a **simple pipeline** to detect road lines in a frame taken from a **roof-mounted camera**.
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+**Basic idea and thinking**
+I have a question before staring this project. How human can recognize lane stips on the road? So I proccessed data which is in my mind and come with few points
 
-# Header 1
+- Houman are good to recognize colors even very small change in color can be recognized by human and I used this thought as base to build this project
+- I have to split intrest area into two part which contain one strip of lane, which help in left, right identification and disconnections.
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-## Header 2
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-### Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
+**Pipeline desciption**
+- Color Mask
+- Smoothing
+- Gaussian Blur
+- Canny Edge Detection
+- Region of Interest
+- Hough Lines
+- Weighted Image
 
 
-### Definition lists can be used with HTML syntax.
+[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/shubham-sri/self-driving-car/tree/main/lane_finding)
 
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
+<center>
+<video width="320" height="240" controls>
+  <source src="/assets/video/lane_finding.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+</center>
