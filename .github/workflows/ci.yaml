@@ -13,5 +13,5 @@ jobs:
           bundler-cache: true
       - name: build
         run: script/bootstrap
-      # - name: test TODO:: diabled test code
-        # run: script/cibuild
+      - name: test
+        run: script/cibuild
